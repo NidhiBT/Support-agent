@@ -14,7 +14,7 @@ MYSQL Query
      * issue.sql
 2. Note: You have to create database and run the query from file(issue.sql). 
 
-API
+## API
 ***
 Create Issue
 --- 
@@ -23,12 +23,12 @@ Create Issue
 2. URL
      * `http://localhost:4000/api/create-issue`
 
-## DESCRIPTION
+### DESCRIPTION
 1. CASE 1
   *  We create a issue after adding description.
   *  Data should be saved in the issue table and automatically assign to the free agent then status  should be process in the issue table
   *  We can check relation between issue and agent in agent_issue_rel table.
-  *  Status should be progress.
+  *  Status code should be progress in the issue table.
 2. CASE 2 
   * If we create another issue after adding description.
   * Data should be saved in the issue table and no agent is free then status code should be pending in the issue table.
@@ -42,12 +42,12 @@ Complete Status
 2. URL
     * `http://localhost:4000/api/complete-status`
   
-### DESCRIPTION
+#### DESCRIPTION
 1. CASE 1
    * We can complete status after adding issue_id.
    * Then pending task should be automatically assign to the free support agent.
 
-#### NOTE
+##### NOTE
 We have to insert directly agent name in the database.I have created only table.
 
 
