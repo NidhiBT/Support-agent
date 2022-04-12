@@ -42,7 +42,7 @@ Complete Status
 2. URL
     * `http://localhost:4000/api/complete-status`
   
-#### DESCRIPTION
+### DESCRIPTION
 1. CASE 1
    * We can complete status after adding issue_id.
    * Then pending task should be automatically assign to the free support agent.
